@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ejercio 4 </title>
+</head>
+<body>
+    <h1> Gana o pierdes el semestre </h1>
+    <script>
+        let not1 = parseFloat(prompt("ingrese la nota 1"));
+        let not2 = parseFloat(prompt("ingrese la nota 2"));
+        let not3 = parseFloat(prompt("ingrese la nota 3"));
+        let not4 = parseFloat(prompt("ingrese la nota 4"));
+        let prom = not1 + not2 + not3 + not4 /4
+        if (prom >= 3.0){
+            document.write(" Felicidades pasaste el semestre ");
+        } else{
+            document.write(" Lastimosamente perdiste el semestre ");
+        }
+        document.write(" tu promedio es: " + prom.toFixed(2));
+        console.log(prom);
+    </script>
+</body>
+</html>
