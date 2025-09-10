@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perimetro de una Circunferencia</title>
+</head>
+<body>
+    <h2>Caculadora de Perimetro de Circunferencia</h2>
+
+    <label for="radio">Ingrese el radio de la Circunferencia</label>
+    <input type="number" id="radio" placeholder="Ej: 10">
+    <button onclick="calcular()">Calcular</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function calcular() {
+            const PI = 3.1415;
+            let radio = parseFloat(document.getElementById("radio").value);
+
+            if (isNaN(radio) || radio <= 0) {
+    
+    document.getElementById("resultado").innerText = "El radio debe ser un numero mayor a 0."
+
+        } else {
+            let perimetro = 2 * PI * radio;
+
+    document.getElementById("resultado").innerText = "El perimetro de la circunferencia es: " + perimetro.toFixed(2);
+            }
+        }
+    </script>
+</body>
+</html>
